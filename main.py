@@ -2,8 +2,12 @@ from player import Player
 
 if __name__ == "__main__":
 
-    player = Player("Corbin", 10)
-    player2 = Player("Cody", 0)
+    corbin = Player("Corbin", 10)
+    cody = Player("Cody", 0)
+    alex = Player("Alex", -100)
 
-    print player.name, "has a skill level of ", player.skill 
-    print player2.name, "has a skill level of ", player2.skill 
+    players = [corbin, cody, alex]
+
+    #Iterate through player and print out their names
+    for p in players:
+        print (p.name)
